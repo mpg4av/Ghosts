@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootRL"
+    android:orientation="horizontal" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ghost">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="@string/ghost_hunters"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/White"
+            android:textSize="40pt" />
+
+        <Button
+            android:id="@+id/loadButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/newButton"
+            android:layout_alignBottom="@+id/newButton"
+            android:layout_alignRight="@+id/textTitle"
+            android:text="@string/load_game"
+            android:textColor="@color/White"
+            android:textSize="20pt" />
+
+        <Button
+            android:id="@+id/newButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/daniel"
+            android:layout_alignRight="@+id/daniel"
+            android:layout_marginBottom="120dp"
+            android:layout_marginRight="29dp"
+            android:text="@string/new_game"
+            android:textColor="@color/White"
+            android:textSize="20pt" />
+
+        <TextView
+            android:id="@+id/mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="91dp"
+            android:text="@string/mac_gotsch"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/brooke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70dp"
+            android:text="@string/brooke_williams"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/bei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/loadButton"
+            android:layout_alignParentBottom="true"
+            android:text="@string/bei_ni_hua"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/daniel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="139dp"
+            android:layout_toRightOf="@+id/mac"
+            android:text="@string/daniel_seelman"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/White" />
+
+    </RelativeLayout>
+

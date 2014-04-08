@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GhostHunters</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ghost_hunters">GHOST HUNTERS</string>
+    <string name="medium_text">Medium Text</string>
+    <string name="mac_gotsch_daniel_seelman_bei_ni_hua_brooke_williams">Mac Gotsch   Daniel Seelman   Bei Ni Hua   Brooke Williams</string>
+    <string name="brooke_williams">Brooke Williams</string>
+    <string name="bei_ni_hua">Bei Ni Hua</string>
+    <string name="daniel_seelman">Daniel Seelman</string>
+    <string name="mac_gotsch">Mac Gotsch</string>
+    <string name="new_game">New Game</string>
+    <string name="load_game">Load Game</string>
+
+</resources>

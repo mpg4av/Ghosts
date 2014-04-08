@@ -1,16 +1,15 @@
-package com.example.ghosthunter;
+package edu.cs.virginia.ghosthunters;
 
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.os.Build;
-import com.example.ghosthunter.R;
+import android.widget.TextView;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -19,10 +18,29 @@ public class MainActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		if (savedInstanceState == null) {
-			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new PlaceholderFragment()).commit();
-		}
+//		if (savedInstanceState == null) {
+//			getSupportFragmentManager().beginTransaction()
+//					.add(R.id.container, new PlaceholderFragment()).commit();
+//		}
+		Typeface font = Typeface.createFromAsset(getAssets(), "fonts/GHOSTBUS.TTF");
+		
+		TextView text = (TextView)this.findViewById(R.id.textTitle);
+		TextView mac = (TextView)this.findViewById(R.id.mac);
+		TextView brooke = (TextView)this.findViewById(R.id.brooke);
+		TextView daniel = (TextView)this.findViewById(R.id.daniel);
+		TextView bei = (TextView)this.findViewById(R.id.bei);
+		TextView loadButton = (TextView)this.findViewById(R.id.loadButton);
+		TextView newButton = (TextView)this.findViewById(R.id.newButton);
+		
+		text.setTypeface(font);
+		mac.setTypeface(font);
+		brooke.setTypeface(font);
+		daniel.setTypeface(font);
+		bei.setTypeface(font);
+		loadButton.setTypeface(font);
+		newButton.setTypeface(font);
+		
+		
 	}
 
 	@Override
